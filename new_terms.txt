@@ -1,0 +1,25 @@
+
+Tools:
+	Anonymous functions:
+
+		execute(function(word){ console.log(word) }, "Hello");
+		"We define the function we want to pass to execute right there at the place where execute expects its first parameter. This way, we don’t even need to give the function a name, which
+		is why this is called an anonymous function."
+
+	Favicon related information:
+
+		That’s because most browser will try to load the favicon by
+		requesting http://localhost:8888/favicon.ico whenever you open
+		http://localhost:8888/
+
+
+Reads:
+	Understanding node.js better:
+		http://debuggable.com/posts/understanding-node-js:4bd98440-45e4-4a9a-8ef7-
+	0f7ecbdd56cb
+
+	On dependency injection:
+		http://martinfowler.com/articles/injection.html
+
+	Steve Yegge's post on functional programming:
+		http://steve-yegge.blogspot.com/2006/03/execution-in-kingdom-of-nouns.html

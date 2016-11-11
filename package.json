@@ -1,0 +1,25 @@
+{
+  "name": "modules",
+  "version": "1.0.0",
+  "description": "sam8041 first node app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sam8401/nodeJSTest.git"
+  },
+  "keywords": [
+    "nodejs",
+    "node",
+    "js"
+  ],
+  "author": "sam8401",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sam8401/nodeJSTest/issues"
+  },
+  "homepage": "https://github.com/sam8401/nodeJSTest#readme"
+}
