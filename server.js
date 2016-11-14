@@ -10,21 +10,20 @@ function start(route, handle) {
 		var pathname = url.parse(request.url).pathname;
 		console.log("Request received with pathname: " + pathname);
 
-		// changes related to POST handling goes here
-		var postData = "";
-		request.setEncoding("utf8");
+		// changes related to POST handling when not using formidable package
 
+		/*var postData = "";
+		request.setEncoding("utf8");
 		request.addListener("data", function (postDataChunk) {
 			postData += postDataChunk;
 			console.log("Received POST data chunk '" + postDataChunk + "' .");
 		});	
-
 		request.addListener("end", function () {
-			route(pathname, handle, response, postData);
+			route(pathname, handle, request, response, postData);
 		});
-		// that's it
+		*/
 
-		//route(pathname, handle, response);
+		route(pathname, handle, request, response);
 	}
 
 	http.createServer(onRequest).listen(8888);

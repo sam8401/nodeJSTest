@@ -3,12 +3,12 @@ Module to "route" requests from server to request handlers
 */
 
 
-function route(pathname, handler, response, postData) {
+function route(pathname, handler, request, response) {
 	console.log("Received request to route " + pathname);
 	var handlerFunc = handler[pathname] ;
 
 	if(typeof(handlerFunc) === 'function'){
-		handlerFunc(response, postData);
+		handlerFunc(request, response);
 	}
 	else {
 		console.log("No handler found for route " + pathname);
